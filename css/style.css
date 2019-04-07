@@ -1,0 +1,87 @@
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.container__search {
+    padding: 10px;
+    margin: 0 auto;
+    width: 300px;
+    height: 50px;
+}
+
+.search__input {
+    border: 2px solid black;
+    width: 80%;
+    float: left;
+    padding: 4px;
+}
+
+.search__button {
+    border: 2px solid black;
+    width: 20%;
+    background-color: white;
+    float: left;
+    padding: 4px;
+}
+
+.container__loader {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    background-image: url(../img/712.gif);
+    background-position: center;
+    background-repeat: no-repeat; 
+}
+
+.container__loader--hidden {
+    display: none;
+}
+
+.container__books {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.books__comm {
+    text-align: center;
+    padding: 20px;
+}
+
+.books__comm--error {
+    color: red;
+}
+
+.book {
+    border-bottom: 2px solid black;
+    padding: 10px 0;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas:
+        'book__cover book__title'
+        'book__cover book__description';
+}
+
+.book__cover {
+    grid-area: book__cover;
+}
+
+.book__title {
+    grid-area: book__title;
+}
+
+.book__description {
+    text-align: justify;
+    grid-area: book__description;
+}
+
+
+
